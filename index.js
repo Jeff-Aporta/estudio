@@ -6,8 +6,8 @@ window.onload = function () {
   base_preguntas = readText("base-preguntas.json");
   interprete_bp = [];
   for (let i = 0; i < 20; i++) {
-    let n1 = Math.round(Math.random() * 45);
-    let n2 = Math.round(Math.random() * 45);
+    let n1 = Math.floor(Math.random() * 1000);
+    let n2 = Math.floor(Math.random() * 1000);
     let s = n1 + n2;
     interprete_bp.push({
       categoria: "Suma",
